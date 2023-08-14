@@ -26,4 +26,6 @@ You could potentially change the shebang in `strath_geeks_cal.py` to point to yo
 
 This should be fairly self explanatory — you'll first want to customise `strath_geeks_cal.yml` with a suitable start month, end month, start time and end time — note that no validation of values is performed, so things will likely break in fun ways if you provide invalid values.
 
+The output will alternate between the two location names provided in the config file — these should be named to be commensurate with the venue names used in the front matter of `_index.md` from  the Strathearn Geeks website so that the Javascript hooks into the calendar and displays the details of the next upcoming event properly. 
+
 Once you're happy, run `./strath_geeks_cal.py` and it will create `strath_geeks_cal.ics`, or prompt to overwrite it if it exists.
